@@ -2,7 +2,7 @@
 
 SELECT
     Property.property_id, Property.name, Property.location,
-    AVG(Review.rating) AS average_rating
+    AVG(Review.rating) AS av_rating
 FROM
     Property
 JOIN 

@@ -2,7 +2,7 @@
 
 SELECT
     User.user_id, User.first_name, User.last_name,
-    COUNT(Booking.booking_id) AS total_bookings
+    COUNT(Booking.booking_id) AS all_bookings
 FROM
     User
 LEFT JOIN
@@ -14,7 +14,7 @@ GROUP BY
 
 SELECT
     Property.property_id, Property.name,
-    COUNT(Booking.booking_id) AS total_bookings,
+    COUNT(Booking.booking_id) AS all_bookings,
     ROW_NUMBER() OVER (ORDER BY COUNT(Booking.booking_id) DESC) AS row_rank,
     RANK() OVER (ORDER BY COUNT(Booking.booking_id) DESC) AS booking_rank
 FROM
