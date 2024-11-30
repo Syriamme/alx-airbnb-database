@@ -13,3 +13,9 @@ This project is aimed at mastering SQL joins by writing complex queries using di
 1. Query to find all properties where the average rating is greater than 4.0 using a subquery.
 
 2. Correlated subquery to find users who have made more than 3 bookings.
+
+# SQL aggregation and window functions to analyze data.
+## Objective
+1.Query to find the total number of bookings made by each user, using the COUNT function and GROUP BY clause.
+
+2. Window function (ROW_NUMBER, RANK) to rank properties based on the total number of bookings they have received.
